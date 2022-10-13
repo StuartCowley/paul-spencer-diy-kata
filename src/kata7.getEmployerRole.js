@@ -1,7 +1,6 @@
 const getEmployerRole = (employeeName, employees) => {
-  const indexNumber = employees.indexOf(employeeName);
-  return employees[indexNumber];
-
+  let employeeEntry = employees.filter(employee => employee.name === employeeName);
+  return employeeEntry[0].role;
 };
 
 

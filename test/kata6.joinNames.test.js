@@ -16,26 +16,20 @@ describe("joinNames", () => {
 
     const namesObj2 = [
       {
-        name: "Arthur",
+        name: "John",
       },
       {
-        name: "Bob",
+        name: "Paul",
       },
       {
-        name: "Celia",
+        name: "George",
       },
       {
-        name: "Dennis",
-      },
-      {
-        name: "Erin",
-      },
-      {
-        name: "Fred",
+        name: "Ringo",
       },
     ];
 
     expect(joinNames(namesObj1)).toEqual("Bart, Lisa & Maggie");
-    expect(joinNames(namesObj2)).toEqual("Arthur, Bob, Celia, Dennis, Erin & Fred");
+    expect(joinNames(namesObj2)).toEqual("John, Paul, George & Ringo");
   });
 });
